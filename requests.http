@@ -1,0 +1,24 @@
+
+### Criar conta
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "name": "Investimentos",
+  "type": "ASSET"
+}
+
+### Lançamento saldo inicial
+POST http://localhost:8080/api/entries
+Content-Type: application/json
+
+{
+  "description": "Saldo inicial investimentos",
+  "postings": [
+    { "accountId": 1, "type": "DEBIT", "amount": 2000.00 },
+    { "accountId": 4, "type": "CREDIT", "amount": 2000.00 }
+  ]
+}
+
+### Balancete (exemplo com datas absolutas)
+GET http://localhost:8080/api/reports/trial-balance?from=2025-01-01&to=2025-12-31
