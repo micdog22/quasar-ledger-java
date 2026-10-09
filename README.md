@@ -2,7 +2,7 @@
 # Quasar Ledger (Java • Spring Boot)
 
 Quasar Ledger é um microserviço de contabilidade em partidas dobradas (double‑entry) escrito em Java 21 + Spring Boot. 
-Ele fornece endpoints REST para contas, lançamentos (journal entries) e relatórios como balancete e DRE — com persistência H2, OpenAPI e testes.
+Ele fornece endpoints REST para contas, lançamentos (journal entries) e relatórios como balancete e DRE, com persistência H2, OpenAPI e testes.
 
 ## Recursos
 - Modelo double‑entry com validação (Débitos = Créditos).
